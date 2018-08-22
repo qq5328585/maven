@@ -1,0 +1,17 @@
+目标:计算当前项目下指定文件类型的数量
+使用方法:
+<plugin>
+   <groupId>com.maven</groupId>
+   <artifactId>maven.gupao</artifactId>
+   <version>1.0-SNAPSHOT</version>
+   <executions>
+      <execution>
+         <phase>package</phase>
+         <goals>
+            <goal>countFile</goal>
+         </goals>
+      </execution>
+   </executions>
+</plugin>
+
+指令:mvn package -DendClass=.java (.java可换java、xml、txt等)
